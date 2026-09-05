@@ -7,10 +7,10 @@
         "args": [
 
             // // Standard operation
-            // "-add", "-va", "3", "-vb", "2"
+            // "-sub", "-va", "5", "-vb", "4"
 
             // Missed parameter
-            "-add" 
+            "-sub", "-opta"
 
         ]
 
