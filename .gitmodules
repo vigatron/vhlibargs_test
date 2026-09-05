@@ -4,3 +4,4 @@
 [submodule "src/extmods/vhlibargs"]
 	path = src/extmods/vhlibargs
 	url = https://github.com/vigatron/vhlibargs
+	branch = initial
