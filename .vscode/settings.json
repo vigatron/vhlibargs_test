@@ -1,0 +1,25 @@
+{
+
+    "debug.inlineValues": "on",
+
+    "cmake.debugConfig": {
+
+        "args": [
+
+            // // Standard operation
+            // "-add", "-va", "3", "-vb", "2"
+
+            // Missed parameter
+            "-add" 
+
+        ]
+
+    },
+
+    // ****************************************************************************************************
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+    // ****************************************************************************************************
+
+    "files.associations": { "cstdint": "cpp" }
+
+}

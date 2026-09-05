@@ -1,0 +1,6 @@
+[submodule "src/extmods/vhlibplatform"]
+	path = src/extmods/vhlibplatform
+	url = https://github.com/vigatron/vhlibplatform
+[submodule "src/extmods/vhlibargs"]
+	path = src/extmods/vhlibargs
+	url = https://github.com/vigatron/vhlibargs
