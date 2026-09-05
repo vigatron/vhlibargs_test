@@ -9,9 +9,8 @@ This repository does not implement its own business logic; its purpose is to bui
 | | |
 |---|---|
 | **Language** | C++17 |
-| **Build system** | CMake ≥ 3.22 |
-| **Project version** | 0.1.0-rc1 |
-| **Primary dependency** | [`vhlibargs`](https://github.com/vigatron/vhlibargs) — command-line arguments parser (v0.1.0-rc1) |
+| **Build system** | CMake ≥ 3.16 |
+| **Primary dependency** | [`vhlibargs`](https://github.com/vigatron/vhlibargs) — command-line arguments parser (v0.1.0-rc2) |
 | **Secondary dependency** | [`vhlibplatform`](https://github.com/vigatron/vhlibplatform) — bit manipulation, fixed-width types, runtime diagnostics (v0.4.2) |
 | **License** | Not specified at the repository root (see [Notes](#notes-and-open-questions)) |
 
@@ -69,8 +68,5 @@ The build produces a single executable target named `vhlibargs_test`, defined fr
 
 ## Status
 
-This is an early-stage, single-commit test repository (not a polished, documented library on its own). At the time of writing:
-
-- `vhlibargs` itself is still at `v0.1.0-rc1` on its `initial_draft` branch — an unreleased, pre-1.0 API.
-
+This is an early-stage, single-commit test repository (not a polished, documented library on its own).
 
