@@ -1,5 +1,7 @@
 # vhlibargs_test
 
+Revision: 0.1.1
+
 A minimal C++ test / integration harness for [`vhlibargs`](https://github.com/vigatron/vhlibargs) — a lightweight command-line arguments parser library by [Viktor Glebov](https://github.com/vigatron).
 
 This repository does not implement its own business logic; its purpose is to build `vhlibargs` (and its platform dependency, `vhlibplatform`) as git submodules inside a real executable target, so that the parser can be exercised, linked, and validated outside of its own isolated build tree.
@@ -10,7 +12,7 @@ This repository does not implement its own business logic; its purpose is to bui
 |---|---|
 | **Language** | C++17 |
 | **Build system** | CMake ≥ 3.16 |
-| **Primary dependency** | [`vhlibargs`](https://github.com/vigatron/vhlibargs) — command-line arguments parser (v0.1.0-rc2) |
+| **Primary dependency** | [`vhlibargs`](https://github.com/vigatron/vhlibargs) — command-line arguments parser (v0.1.0) |
 | **Secondary dependency** | [`vhlibplatform`](https://github.com/vigatron/vhlibplatform) — bit manipulation, fixed-width types, runtime diagnostics (v0.4.2) |
 | **License** | Not specified at the repository root (see [Notes](#notes-and-open-questions)) |
 
