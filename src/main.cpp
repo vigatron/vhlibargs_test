@@ -14,18 +14,18 @@ int main(int argc, char *argv[])
     {
         std::vector<VHArgTypeBase> arrcmd;
 
-        arrcmd.push_back(VHArgTypeCommand("-add", "Add"));
-        arrcmd.push_back(VHArgTypeCommand("-sub", "Sub"));
+        arrcmd.push_back(VHCLIArgCmd("-add", "Add"));
+        arrcmd.push_back(VHCLIArgCmd("-sub", "Sub"));
 
-        arrcmd.push_back(VHArgTypeInteger("-va", "First arg", 3, 0, 100));
-        arrcmd.push_back(VHArgTypeInteger("-vb", "Second arg", 2, 0, 100));
+        arrcmd.push_back(VHCLIArgInt("-va", 3, 0, 100, "First arg"));
+        arrcmd.push_back(VHCLIArgInt("-vb", 2, 0, 100, "Second arg"));
 
         // Test others
-        arrcmd.push_back(VHArgTypeFileName("-file", "default.bin", "Simple file"));
-        arrcmd.push_back(VHArgTypeString("-text", "abcdef", "Simple text"));
+        arrcmd.push_back(VHCLIArgFile("-file", "default.bin", "Simple file"));
+        arrcmd.push_back(VHCLIArgStr("-text", "abcdef", "Simple text"));
 
-        arrcmd.push_back(VHArgTypeOption("-opta", "Option A", false));
-        arrcmd.push_back(VHArgTypeOption("-optb", "Option B", false));
+        arrcmd.push_back(VHCLIArgOpt("-opta", false, "Option A"));
+        arrcmd.push_back(VHCLIArgOpt("-optb", false, "Option B"));
 
         parse_status = cmdline.ParseCommandLine(arrcmd, argc, argv);
     }

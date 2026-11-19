@@ -19,6 +19,8 @@ ARR_PATTERN_TESTS = [
     [EXE_NO, ["-att"], "E: Unknown parameter"],
     [EXE_NO, ["-add", "-sub"], "E: Conflicting commands"],
 
+    [EXE_NO, ["-add", "-va", "3aa", "-vb", "2"], "Test add wrong"],
+
 ]
 
 
